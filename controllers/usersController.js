@@ -3,10 +3,15 @@
  */
 var User = require("../lib/user");
 var users = require("../lib/users");
+var ect = require("ect");
+var renderer = ect({ root : __dirname + '/../views' });
 
 module.exports = {
     getAction: function (request, response, next) {
-        response.end(JSON.stringify(users.getUsers()));
+        var data = JSON.stringify(users.getUsers());
+        response.write(renderer.render('hello.ect', {
+            message: "Hello world"
+        }));
     },
 
     postAction: function (request, response, next) {

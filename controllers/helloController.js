@@ -1,6 +1,9 @@
 var ect = require("ect");
 var renderer = ect({ root : __dirname + '/../views' });
-var data = { title : 'Hello, World!' };
+var data = {
+    page: 'Hello',
+    title : 'Hello, World!'
+};
 
 module.exports = {
    getAction: function(request, response, next){

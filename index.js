@@ -2,7 +2,8 @@
 
 var http = require("http"),
     url = require("url"),
-    routes = require("./routes");
+    routes = require("./routes"),
+    config = require("./config");
 
 
 
@@ -35,4 +36,4 @@ function requestHandler(request, response){
 var server  = http.createServer(requestHandler);
 
 
-server.listen(3000);
+server.listen(config.port);
