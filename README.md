@@ -3,7 +3,7 @@
 ## Как установить? ##
 
 ```bash
-git clone https://github.com/ria-com/school-test-project-day3.git
+git clone https://github.com/Alexandr8970/school-test-project-day3.git
 ```
 
 Выполните в корне проекта:
